@@ -1,3 +1,9 @@
+# Animated Reorderable List
+
+Basic proof of concept for animating reorders in a list of items.
+
+See this [article](https://medium.com/developers-writing/animating-the-unanimatable-1346a5aab3cd) for more details.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
