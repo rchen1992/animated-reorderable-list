@@ -2,7 +2,20 @@ import React from 'react';
 import { shuffle } from 'lodash';
 import './App.css';
 
-const divs = ['gray', 'rebeccapurple', 'maroon', 'turquoise', 'limegreen'];
+const divs = [
+    'gray',
+    'rebeccapurple',
+    'maroon',
+    'turquoise',
+    'limegreen',
+    'black',
+    'orange',
+    'purple',
+    'indigo',
+    'green',
+    'yellow',
+    'red',
+];
 
 /**
  * Returns an object where the key is the color and the value is the
@@ -113,8 +126,11 @@ function App() {
     }
 
     return (
-        <div className="main">
-            {list} <button onClick={reorder}>Reorder</button>
+        <div>
+            <div className="main">{list}</div>
+            <div className="reorder">
+                <button onClick={reorder}>Reorder</button>
+            </div>
         </div>
     );
 }
