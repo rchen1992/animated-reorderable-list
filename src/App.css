@@ -43,6 +43,17 @@
 .item {
     width: 200px;
     height: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropzone {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .reorder {
