@@ -176,18 +176,18 @@ function App() {
 
     function onDragEnd(e) {
         console.log('drag end');
-        // setDragTargetTransform(0, 0, true);
+        setDragTargetTransform(0, 0, true);
 
         /**
          * Since we are manipulating the dragged element's position,
          * we need to update the bounding box after we are finished dragging.
          */
-        // const color = dragTargetColor.current;
-        // const node = itemRefs.current[color].current;
-        // setTimeout(() => {
-        //     const boundingBox = node.getBoundingClientRect();
-        //     positions.current[color] = boundingBox;
-        // }, TRANSITION_SPEED);
+        const color = dragTargetColor.current;
+        const node = itemRefs.current[color].current;
+        setTimeout(() => {
+            const boundingBox = node.getBoundingClientRect();
+            positions.current[color] = boundingBox;
+        }, TRANSITION_SPEED);
 
         startCoord.current = [0, 0];
         dragTargetColor.current = null;
